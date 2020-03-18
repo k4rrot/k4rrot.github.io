@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <!-- Grab the local styles.css -->
+        <link rel="stylesheet" href="/styles.css">
+    </head>
+
+    <body>
+        <div class="carrot">
+            <div class="carrot-piece">_\/_</div>
+            <div class="carrot-piece">\  /</div>
+            <div class="carrot-piece"> \/ </div>
+        </div>
+        <div class="links">
+            <div class="link"><a href="https://twitter.com/k4rrot">twitter</a></div>
+            <div class="link"><a style="text-decoration: line-through" href="https://listen.k4rrot.xyz">radio</a></div>
+            <div class="link"><a href="https://github.com/k4rrot">git</a></div>
+        </div>
+    </body>
+
+    <script>
+        function flicker(index) {
+            let carrot_pieces = document.querySelectorAll('.carrot-piece');
+            carrot_pieces.forEach((e) => {
+                e.style.opacity = "1";
+            });
+
+            carrot_pieces[index].style.opacity = "0";
+
+            setTimeout(() => {
+                carrot_pieces[index].style.opacity = "1"; 
+            }, Math.random() * 250);
+
+        }
+
+        for(let i = 0; i < 5; i++) {
+            setInterval(() => {
+                flicker(Math.floor(Math.random() * 3));
+            }, Math.floor(Math.random() * 10000));
+        }
+    </script>
+</html>

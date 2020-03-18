@@ -1,0 +1,82 @@
+/* Set variables for primary theme colors */
+:root {
+    --color-bg: black;
+    /*--color-bg: #12181E;*/
+    /*--color-fg: #56616f;*/
+    --color-fg: #12181E;
+    --color-select: #a31e27;
+    --color-text-primary: #fafaff;
+    --color-text-secondary: #42ae78;
+}
+
+
+/* ===TAG OVERRIDES=== */
+
+
+/* Set the default text color and set the font */
+* {
+    color: var(--color-text-primary);
+    font-family: "Courier New", Courier, monospace;
+}
+
+/* Set default background color for body elements */
+body {
+    background-color: var(--color-bg);
+}
+
+/* Set link colors and add fade transition */
+a {
+    color: var(--color-text-secondary);
+}
+
+a:visited {
+    color: var(--color-text-secondary);
+}
+
+a:hover {
+    color: var(--color-select);
+    text-decoration: none;
+}
+
+
+/* ===CLASSES=== */
+
+
+/* Remove rounded corners */
+.sharp {
+    border-radius: 0 !important;
+}
+
+
+/* Add foreground color background */
+.fg {
+    background-color: var(--color-fg);
+}
+
+.carrot {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 5em;
+    height: 50%;
+}
+
+.carrot-piece {
+    color: #00FF00;
+    white-space: pre;
+    text-align: center;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align: center;
+    font-size: 1em;
+    text-align: center;
+}
+
+.link {
+    display: inline-block;
+    margin: 1em;
+}
