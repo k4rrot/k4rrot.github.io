@@ -142,9 +142,9 @@ function getAvoidMouseVector(bird) {
         v = vSubtract(v, vSubtract([mousePos[0], mousePos[1], bird.position[2]], bird.position));
     };
 
-    v[0] *= 100;
-    v[1] *= 100;
-    v[2] *= 100;
+    v[0] *= 10;
+    v[1] *= 10;
+    v[2] *= 10;
 
     return v;
 }
@@ -166,11 +166,18 @@ function updateBird(bird) {
 
     // cap velocity
     if(mag(bird.velocity) > MAX_VELOCITY) {
+        bird.velocity = [
+            bird.velocity[0] / 5,
+            bird.velocity[1] / 5,
+            bird.velocity[2] / 5,
+        ];
+        /*
         let v1 = (bird.velocity[0] / mag(bird.velocity)) * MAX_VELOCITY;
         let v2 = (bird.velocity[1] / mag(bird.velocity)) * MAX_VELOCITY;
         let v3 = (bird.velocity[2] / mag(bird.velocity)) * MAX_VELOCITY;
 
         bird.velocity = [v1, v2, v3];
+        */
     }
 
     // move birds
@@ -237,7 +244,7 @@ window.addEventListener('load', () => {
         });
     }
 
-    setInterval(step, 32);
+    setInterval(step, 16);
     setInterval(scatter, 15000);
 });
 
