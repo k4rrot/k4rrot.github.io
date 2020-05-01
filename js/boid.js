@@ -24,6 +24,7 @@ const MOD_CENTER_MASS = 15;
 const MOD_VEL_MATCH = 1000;
 const MAX_VELOCITY = 5;
 const WIND_MAX = 0;
+const MOUSE_REPEL_RADIUS = 100;
 var MOD_CENTER_TENDENCY = 0;
 
 
@@ -34,7 +35,12 @@ boid:
  */
 let birds = [];
 let wind = [0, 0];
+let mousePos = [0, 0];
 
+
+function updateMousePos() {
+
+}
 
 function scatter() {
     if(BOID_RADIUS == 40) {
@@ -129,6 +135,21 @@ function getCenterVector(bird) {
 }
 
 
+function getAvoidMouseVector(bird) {
+    let v = [0, 0, 0];
+
+    if(dist(bird.position, [mousePos[0], mousePos[1], bird.position[2]]) < MOUSE_REPEL_RADIUS) {
+        v = vSubtract(v, vSubtract([mousePos[0], mousePos[1], bird.position[2]], bird.position));
+    };
+
+    v[0] *= 100;
+    v[1] *= 100;
+    v[2] *= 100;
+
+    return v;
+}
+
+
 function updateBird(bird) {
     // find all local birds
     let localBirds = [];
@@ -141,6 +162,7 @@ function updateBird(bird) {
     bird.velocity = vAdd(bird.velocity, getNeighborRepelVector(bird, localBirds));
     bird.velocity = vAdd(bird.velocity, getVelocityMatchVector(bird, localBirds));
     bird.velocity = vAdd(bird.velocity, getCenterVector(bird));
+    bird.velocity = vAdd(bird.velocity, getAvoidMouseVector(bird));
 
     // cap velocity
     if(mag(bird.velocity) > MAX_VELOCITY) {
@@ -217,4 +239,12 @@ window.addEventListener('load', () => {
 
     setInterval(step, 32);
     setInterval(scatter, 15000);
+});
+
+canvas.addEventListener('mousemove', (e) => {
+    let rect = canvas.getBoundingClientRect();
+    mousePos = [
+        e.clientX - rect.left,
+        e.clientY - rect.top
+    ];
 });
