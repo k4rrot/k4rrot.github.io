@@ -1,0 +1,76 @@
+==================================================================
+https://keybase.io/k4rrot
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://k4rrot.xyz
+  * I am k4rrot (https://keybase.io/k4rrot) on keybase.
+  * I have a public key with fingerprint 09F8 105C A0CE 8529 868A  C7E7 77CF 4B16 CADA 6AA2
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120372cce45565be1292a77bc291f981ac54602c3d04587549555beee2a6c71435b0a",
+      "fingerprint": "09f8105ca0ce8529868ac7e777cf4b16cada6aa2",
+      "host": "keybase.io",
+      "key_id": "77cf4b16cada6aa2",
+      "kid": "0101a6fc21569c1bd060d6bc4b95f0a423a33c376ed14238192d18eb35a587ff76310a",
+      "uid": "2d25b0ea852fa72abe299b8e69431119",
+      "username": "k4rrot"
+    },
+    "service": {
+      "hostname": "k4rrot.xyz",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1588652946,
+  "expire_in": 157680000,
+  "prev": "17c4966cdcbacdfb5a2f023043ac6dac18db13025fae748ed990c086dcbda77c",
+  "seqno": 7,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.1.13
+Comment: https://keybase.io/crypto
+
+yMNtAnicbVJtUFRVGIZMSwQ0NsiICbxUIm1wvz+WEBrQLBU2EX4gRueeey5e3Ha3
+3QUWEbFETD6KIIePTAR0SW1H0DEqI5LCVAKHcYCwcQZnp53RIPlQkZqie5n80Uzn
+zznve57nOc/7nveHgEU+fr4FVzeGXLme2+Lbd6E2z+fN9t9qijDRIhVihiJsJ1rY
+kElCdkf2TkXCDBhOkDjFkRAimmFYRkQEKZCA40RICoQs8ASADM3iJKQknGZ4jqEF
+hlFhCJGAhRxBU4yIA0yPyYo5B9msNsXs0GQFmSdwBgIcIp4hBZ7lAeQQx3FQpkWC
+hUACLACkStxhsWsM1ZwI7ChGsag5NchesPc/+Ie+cQKwMiQJhhUgIUo4i0usCGlR
+YGQc0CQFKApSHIskQg14QiAlgkcixQC1ClnmWIpY8J23IEdKpFoHAqpXGXAkEBEp
+CCKPWIGmCIIQNKAd2czgbaR5pW02iwMr1mNqLl+BSGurVsd/7mOchbtUnlU9WqDF
+pOZ3OBxWu0HjOQqtGrAAidn/SmSLillSe6gy8pHNrljMmIFQkdChaJoEw/Os2kia
+1WPIaVVsKFvREAzH8ri6tHdQvipJcJAWWBZKUARQkkUGkDJOUjhNAchKABK8JBIU
+TjIyQBzNI0kQcIjzrIqX1H+HmFbUO2YLZuBUmyBHlbQrOWbgyLMhrLjnQtajPr5+
+PksWP6LNlo/f0hUPJ6772PL53Z+kBzbUpXf2VU6GVxvIjjD38VPHJk/W/VVpEb8N
+9DBDiU+C1y49dndd27LQmNFMf1DgntYNHv1641crg1z7XdOH7jp3pf5afuN5/Zq4
+BHfNF6Ot5+L+8Pbe7IW28KxbDd49iza3rNh+6enP59Pj6nJXRo0kRHijzmS4XjEZ
+Db1LGhuSi5Nr0nrE0p/q7x1sis0PqNPV317bMTL21HCkvtzWfy7t9Nae0hO6MMNb
+d5T3PqghL3JBUe2R+1KeqfUm6KP7XvBOzAXC2tzZVAZ9qZtZ/hlTgj0b2+u6WN3W
+WeJJyyrD1p8ILUlhCPCy68aPt2cz+nPPtA+Fvf7q9ZbBRsuq1f3NdzqD14dPbXp3
+Zs+DaMq9OnDsgbvtJWPX+K3KpXsntnxkJidGGp3j++cik+pdo3ZP1andR+LWxotT
+/rHOD0OS+Fbdz+kp/kxhULHJ2n+1bHzzcIjHVydV2Qe6k8qTijKta5RR8+mw5GbL
+tn05Ps0hZdvKrhGhwa4tcWe7/YxHe6quBKyqvPn+AG+eSTVurYjY6zkY8f2BoWm/
+xvTzg/fXPbFhOKg0ZeKk+093/t/PDc3rjnR9d/l4p8lYe7jrDf7Tw9PVix8/O5jo
+3WDMPF/WMRfQyvcv2fSi897AIRrEBzf1Zfximv3m8u/bA6+BiI89FRVV99m0wbHE
+6GVN8aNd1vjJqX8A7rTDlg==
+=Kozk
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/k4rrot
+
+==================================================================
+
